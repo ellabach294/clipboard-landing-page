@@ -1,0 +1,342 @@
+:root {
+    --dark-cyan: hsl(171, 66%, 44%);
+    --shadow-cyan: hsl(171, 65%, 29%);
+    --light-blue: hsl(233, 100%, 69%);
+    --shadow-blue: hsl(233, 44%, 49%);
+    --dark-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --gray: #e9e9e9;
+    --white: #f2f2f2;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.125rem;
+}
+
+.inner-container {
+    padding: 0 2rem;
+}
+
+/* ******** typography ******* */
+h1 {
+    line-height: 1.25;
+    font-size: 2rem;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+h2 {
+    line-height: 1.25;
+    font-size: 1.75rem;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+h3 {
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+p {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+header p,
+.track>p,
+.access p,
+.supercharge p,
+.clipboard p {
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+/* ******** header ******* */
+header {
+    margin-bottom: 15rem;
+}
+
+.header-background {
+    background: url(../img/bg-header-mobile.png) center top/ cover no-repeat;
+    height: 20rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    padding-top: 2rem;
+}
+
+header p {
+    padding: 1rem 1.25rem 2rem 1.25rem;
+}
+
+.download-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-button a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    background-color: var(--dark-cyan);
+    padding: 0.75rem 4rem;
+    border-radius: 50px;
+    box-shadow: 0  2px 2px var(--shadow-cyan), 0 5px 20px var(--dark-cyan);
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.download-button a:last-child {
+    margin-top: 1rem;
+    background-color: var(--light-blue);
+    box-shadow: 0  2px 2px var(--shadow-blue), 0 5px 20px var(--light-blue);
+}
+
+/* ******** section-track ******* */
+.track {
+    margin-bottom: 10rem;
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+.track-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.track-content section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.track p {
+    padding: 1rem 0 2.5rem 0;
+}
+
+.track img {
+    padding: 2.5rem 0;
+    margin: 0 auto;
+}
+
+/* ******** section-access ******* */
+.access {
+    margin-bottom: 10rem;
+}
+
+.access img {
+    padding: 2.5rem 0;
+    margin: 0 auto;
+}
+
+/* ******** section-supercharge ******* */
+.supercharge svg {
+    margin-bottom: 2rem;
+}
+
+.blacklist,
+.snippet,
+.preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.blacklist svg {
+    max-width: 38px;
+    height: auto;
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0 10rem 0;
+}
+
+.client img {
+    margin: 2rem 0;
+}
+
+/* ******** section-clipboard ******* */
+.clipboard {
+    margin-bottom: 10rem;
+}
+
+
+/* ******** footer ******* */
+footer {
+    background-color: var(--gray);
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    margin: 2rem 0;
+    max-width: 10%;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-menu li {
+    margin: 0.5rem 0;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social svg {
+    margin: 2rem 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .inner-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-bottom: 10rem;
+    }
+
+    .header-background {
+        background: url(../img/bg-header-desktop.png) center top/ cover no-repeat;
+    }
+
+    header p,
+    .track>p,
+    .access>p,
+    .supercharge>p,
+    .clipboard>p {
+        padding: 1rem 20rem;
+    }
+
+    .download-button {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2%;
+    }
+
+    .flex-track {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .flex-track img {
+        width: 60%;
+    }
+
+    .track-content {
+        margin: 6rem 10rem 0 0;
+        width: 35%;
+    }
+
+    .track-content section {
+        align-items: flex-start;
+    }
+
+    .track-content section p {
+        align-self: flex-start;
+    }
+
+    .access {
+        margin-bottom: 5rem;
+    }
+
+    .workflow {
+        display: flex;
+        flex: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workflow section {
+        width: calc(100%/3);
+    }
+
+    .workflow section>p {
+        padding-top: 1rem;
+    }
+
+    .client {
+        flex-direction: row;
+        gap: 10%;
+        margin-top: 5rem;
+    }
+
+    .footer-flex {
+        flex-direction: row;
+        flex-flow: row wrap;
+    }
+
+    .footer-logo {
+        max-width: 3%;
+        margin-left: 3rem;
+        flex: 0 0 30%;
+    }
+
+    footer nav {
+        flex: 0 0 50%;
+    }
+
+    nav ul.footer-menu {
+        flex-flow: row wrap;
+        margin-right: 10rem;
+    }
+
+    nav ul.footer-menu li {
+        flex: 0 1 calc(100%/3);
+    }
+
+    nav ul.footer-menu li:nth-child(2) {
+        order: 2;
+    }
+
+    nav ul.footer-menu li:nth-child(4) {
+        order: 2;
+    }
+
+    footer .social {
+        flex: 0 0 20%;
+        justify-content: flex-start;
+    }
+
+    footer .attribution {
+        width: 100vw;
+    }
+}
